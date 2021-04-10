@@ -11,14 +11,20 @@
     
         <li class="nav-item">
             <a class="nav-link">
-              Bienvenido Alumno 123
+              Bienvenido {{ Auth::user()->name }}
             </a>
           </li>
 
       <li class="nav-item">
-        <a class="nav-link"  href="#">
+        <a class="nav-link"  href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                                   document.getElementById('logout-form').submit()">
+
           <i class="fas fa-sign-out-alt"></i>
         </a>
+        <form id="logout-form" action="{{ route('logout') }}" method="post" display="none">
+          @csrf
+        </form>
+
       </li>
     </ul>
   </nav>

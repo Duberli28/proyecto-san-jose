@@ -13,11 +13,11 @@
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Inicio</a></li>
               <li class="breadcrumb-item active">Principal</li>
-              <li class="breadcrumb-item active">
+              {{-- <li class="breadcrumb-item active">
                 @foreach ($usuario as $item)
                   {{ $item }}
                 @endforeach
-              </li>
+              </li> --}}
             </ol>
           </div>
         </div>
