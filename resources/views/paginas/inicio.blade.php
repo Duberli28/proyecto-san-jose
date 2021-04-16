@@ -32,7 +32,12 @@
           <li class="nav-item"><a class="nav-link tab activo" href="#activity" data-toggle="tab">Principal</a></li>
           <li class="nav-item"><a class="nav-link tab" href="#timeline" data-toggle="tab">Mis Cursos</a></li>
           <li class="nav-item"><a class="nav-link tab" href="#settings" data-toggle="tab">Anuncios</a></li>
+          
         </ul>
+      
+       
+      
+      
       </div>
       <!-- /.card -->
 

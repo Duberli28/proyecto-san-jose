@@ -14,7 +14,7 @@
         </div>
         <div class="info">
             <span class="profile-username text-justify">
-                <a href="#" class="text-white">Nombre usuario</a>
+                <a href="#" class="text-white">{{ Auth::user()->name }}</a>
                 <a href="#" class="float-left btn-tool text-white">Código: 21983478901</a>
             </span>
         </div>
@@ -34,30 +34,15 @@
             </li>
 
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{ url('/') }}/usuarios" class="nav-link">
                   <i class="nav-icon fas fa-chart-pie text-white"></i>
                   <p class="text-white">
-                    INFORMACION
-                    <i class="right fas fa-angle-left"></i>
+                    USUARIOS
+
                   </p>
                 </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="{{ url('/') }}/datos-personales" class="nav-link">
-                                             
-                        <i class="far fa-circle nav-icon text-white"></i>                          
-                        <p class="text-white">Datos Personales</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="{{ url('/') }}/documentos" class="nav-link">
-                      <i class="far fa-circle nav-icon text-white"></i>
-                      <p class="text-white">Documentos</p>
-                    </a>
-                  </li>
-                  
-                </ul>
             </li>
+
             <li class="nav-item">
                 <a href="#" class="nav-link">
                     <i class="fas fa-user-graduate nav-icon text-white"></i>

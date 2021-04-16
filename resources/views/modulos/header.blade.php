@@ -11,7 +11,7 @@
     
         <li class="nav-item">
             <a class="nav-link">
-              Bienvenido {{ Auth::user()->name }}
+              Bienvenido {{ Auth::user()->name }} {{ Auth::user()->apellido_pat }} {{ Auth::user()->apellido_mat }}
             </a>
           </li>
 
